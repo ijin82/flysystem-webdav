@@ -1,0 +1,29 @@
+{
+    "name": "ijin82/flysystem-webdav",
+    "description": "Laravel 5 service provider for Flysystem Webdav adapter (league/flysystem-webdav)",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ilya Rogojin",
+            "email": "ilya.rogojin@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "league/flysystem-webdav": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "mockery/mockery": "~0.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ijin82\\Flysystem\\Webdav\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
