@@ -20,6 +20,19 @@ class WebDAVAdapterExt extends WebDAVAdapter {
     {
         return $this->fsConfig['baseUri'] . $this->fsConfig['uriPrefix'] . $path;
     }
+
+    public function deleteDir($dirname)
+    {
+        $location = $this->applyPathPrefix($this->encodePath($dirname));
+
+        try {
+            $this->client->request('DELETE', $location . '/');
+
+            return true;
+        } catch (NotFound $e) {
+            return false;
+        }
+    }
 }
 
 class WebdavServiceProvider extends ServiceProvider
