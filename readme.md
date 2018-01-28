@@ -176,12 +176,12 @@ public function avatarUpload(Request $request)
 }
 ```
 
-### Get file url , blade example
+### Get file url, blade example
 ```blade
 <a href="{{ Storage::disk('avatars')->url($fileName) }}" target="_blank">.{{ $ext }}</a>
 ```
 
-### Get file url , code example
+### Get file url, code example
 ```php
     //... fileName logic
     $fileUrl = Storage::disk('avatars')->url($fileName);
