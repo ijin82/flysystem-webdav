@@ -18,9 +18,9 @@ class WebDAVAdapterExt extends WebDAVAdapter {
 
     public function getUrl($path)
     {
-        if (!empty($this->fsConfig['uriPrefix'])) {
+        if (!empty($this->fsConfig['path_alias'])) {
             // with this feature you can use symlink to folder
-            return $this->fsConfig['baseUri'] . $this->fsConfig['uriPrefix'] . $path;
+            return $this->fsConfig['baseUri'] . $this->fsConfig['path_alias'] . $path;
         } else {
             return $this->fsConfig['baseUri'] . $this->fsConfig['path_prefix'] . $path;
         }
