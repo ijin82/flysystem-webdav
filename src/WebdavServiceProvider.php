@@ -4,6 +4,7 @@ namespace Ijin82\Flysystem\Webdav;
 
 use Storage;
 use Sabre\DAV\Client;
+use Sabre\DAV\Exception\NotFound;
 use League\Flysystem\Filesystem;
 use League\Flysystem\WebDAV\WebDAVAdapter;
 use Illuminate\Support\ServiceProvider;
