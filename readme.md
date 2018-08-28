@@ -186,19 +186,19 @@ public function avatarUpload(Request $request)
 
 ### Get file url, code example
 ```php
-    //... fileName logic
-    $fileUrl = Storage::disk('avatars')->url($fileName);
+//... fileName logic
+$fileUrl = Storage::disk('avatars')->url($fileName);
 ```
 
 ### Delete file example
 ```php
-    Storage::disk('avatars')->delete($fileName);
+Storage::disk('avatars')->delete($fileName);
 ```
 
 ### Delete folder example
 ```php
-    // WARNING, all files inside that also will be deleted
-    Storage::disk('avatars')->deleteDir('dir-name/or/path');
+// WARNING, all files inside that also will be deleted
+Storage::disk('avatars')->deleteDir('dir-name/or/path');
 ```
 
 Check out original [flysystem docs](http://flysystem.thephpleague.com)
