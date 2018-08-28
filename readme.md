@@ -1,3 +1,6 @@
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+[![Total Downloads](https://poser.pugx.org/ijin82/flysystem-webdav/downloads)](https://packagist.org/packages/ijin82/flysystem-webdav)
+
 # Flysystem Webdav service provider for Laravel 5 
 
 ## What is it for?
